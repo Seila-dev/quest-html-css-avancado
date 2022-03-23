@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'roboto', sans-serif;
+}
+
+.section{
+    position: relative;
+    top: 150px;
+}
+.section-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images img{
+    width: 400px;
+    height: 590px;
+    padding: 5px;
+}
+.images img:hover{
+    opacity: 80%;
+}
+
+
+.images{
+    position: relative;
+}
+
+.content{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    
+}
+.content h2{
+    color: white;
+    font-weight: 500;
+    font-size: 29px;
+    transition: 0.25s;
+}
+.content h2:hover{
+    color: wheat;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 35px;
+}
+.content p{
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+}

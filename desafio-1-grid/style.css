@@ -1,0 +1,55 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+html{
+    font-size: 80%;
+}
+
+.main{
+    display: grid;
+    grid:                  "destaque ad"
+                           "destaque videos"
+                           "destaque videos"
+                           "destaque videos" ;
+    padding: 80px;
+}
+
+.main .destaque h2,
+.main .destaque p{
+    padding: 10px 0;
+    margin: 0;
+}
+.main .destaque p{
+    max-width: 80%;
+}
+
+.destaque{
+    grid-area: destaque;
+}
+
+.propaganda{
+    grid-area: ad;
+    padding: 20px;
+}
+
+.videos{
+    grid-area: videos;
+    display: flex;
+    padding: 10px;
+}
+.auto p,
+.auto h2{
+    padding: 4px 0;
+}
+.video3{
+    grid-area: 2/2;
+}
+
+.video2{
+    grid-area: 3/2;
+}
+
+.video1{
+    grid-area: 4/2;
+}
