@@ -1,55 +1,60 @@
 body{
+    max-width: 900px;
+    height: 415px;
+    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-}
-html{
-    font-size: 80%;
 }
 
 .main{
     display: grid;
-    grid:                  "destaque ad"
-                           "destaque videos"
-                           "destaque videos"
-                           "destaque videos" ;
-    padding: 80px;
+    grid-template-areas:   "destaque ad"
+                           "destaque videos-relacionados" ;
+    padding: 30px;
 }
 
-.main .destaque h2,
-.main .destaque p{
-    padding: 10px 0;
-    margin: 0;
+.destaque h1{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 12px;
 }
-.main .destaque p{
-    max-width: 80%;
+.destaque p{
+    font-weight: 300;
+    font-size: 14px;
+    margin: 7px 0px;
+}
+.destaque p:last-child{
+    font-size: 16px;
+    width: 538px;
+    height: 76px;
+}
+
+.videos{
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 7px 0px;
+}
+.videos p{
+    font-size: 11px;
+    font-weight: 300;
+    margin: 5px 0px;
+}
+
+.videos h2{
+    font-size: 14px;
+}
+
+.auto{
+    margin-left: 5px;
+}
+
+.propaganda{
+    grid-area: ad;
 }
 
 .destaque{
     grid-area: destaque;
 }
-
-.propaganda{
-    grid-area: ad;
-    padding: 20px;
-}
-
-.videos{
-    grid-area: videos;
-    display: flex;
-    padding: 10px;
-}
-.auto p,
-.auto h2{
-    padding: 4px 0;
-}
-.video3{
-    grid-area: 2/2;
-}
-
-.video2{
-    grid-area: 3/2;
-}
-
-.video1{
-    grid-area: 4/2;
+.videos-relacionados{
+    grid-area: videos-relacionados;
 }
